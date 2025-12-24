@@ -1,4 +1,4 @@
-import { skills } from "../data/skills";
+import { skills } from "../data/Skills";
 import SectionWrapper from "./SectionWrapper";
 
 export default function Skills() {

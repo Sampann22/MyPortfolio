@@ -29,32 +29,6 @@ Designed with a clean UI, smooth animations, and dark/light theme support.
 - **Deployment:** Netlify
 - **Version Control:** Git & GitHub
 
----
-
-## 📂 Project Structure
-
-├─ public/
-│ ├─ resume.pdf
-│ ├─ _redirects
-│ └─ logoo.png
-├─ src/
-│ ├─ components/
-│ │ ├─ animations/
-│ │ ├─ Navbar.jsx
-│ │ ├─ Hero.jsx
-│ │ ├─ About.jsx
-│ │ ├─ Skills.jsx
-│ │ ├─ Education.jsx
-│ │ ├─ Projects.jsx
-│ │ ├─ Contact.jsx
-│ │ └─ Footer.jsx
-│ ├─ context/
-│ │ └─ ThemeContext.jsx
-│ ├─ data/
-│ └─ App.jsx
-├─ index.html
-└─ vite.config.js
-
 
 ---
 

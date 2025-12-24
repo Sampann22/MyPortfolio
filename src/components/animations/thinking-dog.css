@@ -1,0 +1,22 @@
+/* Scoped wrapper to avoid global CSS pollution */
+.thinking-dog-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ⬇️ EVERYTHING BELOW IS YOUR ORIGINAL CSS ⬇️ */
+
+.thinking-dog-wrapper .main {
+  position: relative;
+  width: 23.5vmax;
+  height: 23.5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* KEEP ALL CLASSES EXACTLY AS THEY ARE */
+/* .dog, .dog__head, keyframes, etc… */
+
+/* ⬆️ END OF ORIGINAL CSS ⬆️ */

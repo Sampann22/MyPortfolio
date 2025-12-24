@@ -20,26 +20,39 @@ export default function Hero() {
   }, []);
 
   return (
-    <SectionWrapper className="min-h-screen bg-gray-50 dark:bg-neutral-900 flex items-center justify-center px-6 pt-28">
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <SectionWrapper className="
+      min-h-screen
+      bg-gray-50 dark:bg-neutral-900
+      flex items-center justify-center
+      px-4 sm:px-6
+      pt-24 sm:pt-28
+    ">
+      <div className="
+        max-w-6xl w-full
+        grid grid-cols-1 md:grid-cols-2
+        gap-10 md:gap-12
+        items-center
+      ">
 
         {/* Left: Text */}
-        <div>
-         <h1
+        <div className="text-center md:text-left">
+          <h1
             className="
-              text-4xl md:text-6xl font-bold mb-6
+              text-3xl sm:text-4xl md:text-6xl
+              font-bold
+              mb-6
               text-gray-900 dark:text-gray-100
               leading-tight
-              whitespace-nowrap
             "
           >
-            <span className="font-semibold mr-2">Hello,</span>
+            <span className="block sm:inline font-semibold mr-2">
+              Hello,
+            </span>
             I’m{" "}
             <span className="text-blue-600 dark:text-blue-400">
               Sampann Tiwari
             </span>
           </h1>
-
 
           <AnimatePresence mode="wait">
             <Motion.p
@@ -48,15 +61,17 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.6 }}
-              className="text-xl mb-8 h-8
-                         text-gray-600 dark:text-gray-400"
+              className="
+                text-base sm:text-lg md:text-xl
+                mb-8 h-6 sm:h-8
+                text-gray-600 dark:text-gray-400
+              "
             >
               {roles[index]}
             </Motion.p>
           </AnimatePresence>
 
-          <div className="flex gap-4">
-            {/* Primary CTA */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#projects"
               className="
@@ -70,7 +85,6 @@ export default function Hero() {
               View Projects
             </a>
 
-            {/* Secondary CTA */}
             <a
               href="/Sampann_Resume_da.pdf"
               target="_blank"
@@ -94,7 +108,8 @@ export default function Hero() {
             src={profile}
             alt="Sampann Tiwari"
             className="
-              max-w-[280px] md:max-w-[340px] w-full h-auto
+              w-40 sm:w-52 md:w-[340px]
+              h-auto
               rounded-xl
               border border-blue-500/40
               shadow-[0_0_25px_rgba(59,130,246,0.35)]

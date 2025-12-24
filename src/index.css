@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
-/* 🔥 Force dark mode to use `.dark` class */
 @custom-variant dark (&:where(.dark, .dark *));
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-tap-highlight-color: transparent;
 }
